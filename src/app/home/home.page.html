@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inventory Management
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-card>
+        <ion-card-content>
+          Users
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card (click)="goToInventory()">
+        <ion-card-content >
+          Inventory
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card (click)="goToRequestAllocations()">
+        <ion-card-content>
+          Allocation Requests
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>
